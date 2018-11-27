@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		#faces {
+			width: 400px;
+			height: 400px;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div id="faces">
+		<input id="left_nbr" type="text" name="left_nbr">
+		<select id="op">
+			<option value="*">*</option>
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input id="right_nbr" type="text" name="right_nbr">
+		<input type="submit" name="submit" onclick = "calc()" value="Try me!">
+	</div>
+	<script type="text/javascript">
+		setInterval(wakeup, 30000);
+
+		function wakeup() {
+			alert("Please, use me...");
+		}
+
+		function do_op(a,b,op) {
+			var r;
+			a = Number(a);
+			b = Number(b); 
+
+			r = -1;
+			if (op == '*') {
+				r = a * b;
+			} else if (op == '+') {
+				r = a + b;
+			} else if (op == '-') {
+				r = a - b;
+			} else if (op == '/') {
+				r = a / b;
+			} else if (op == '%') {
+				r = a % b;
+			}
+			return r;
+		}		
+
+		function validate(l_nbr, r_nbr) {		
+			if (isNaN(l_nbr) || isNaN(r_nbr) || l_nbr == 0 || r_nbr == 0 || l_nbr < 0 || r_nbr < 0)
+			{
+				alert("Error :(");
+				return -1;
+			}
+			else if (r_nbr === '0') {
+				alert("It’s over 9000!");
+				console.log("It’s over 9000!");
+				return 1;
+			}
+			else
+				return 1;
+		}
+
+		function calc() {
+			var l_nbr = document.getElementById("left_nbr").value;
+			var r_nbr = document.getElementById("right_nbr").value;
+
+			if (validate(l_nbr, r_nbr) == 1) {
+				var ans = do_op(l_nbr,r_nbr, document.getElementById("op").value);
+				alert(ans);
+				console.log(ans);
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon</title>
+	<style type="text/css">
+
+		#balloon {
+			width : 200px;
+			height : 200px;
+			background-color: red;
+			border-radius: 50%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id ="balloon" onclick="live();" onmouseleave="liveprime();" ></div>
+	<script type="text/javascript">
+		var elem = document.getElementById("balloon");
+
+		function live() {
+			
+			var bgc = window.getComputedStyle(elem, null).getPropertyValue("background-color");
+			var bw = window.getComputedStyle(elem, null).getPropertyValue("width");
+			var bh = window.getComputedStyle(elem, null).getPropertyValue("height");
+			
+			if (bgc == 'rgb(255, 0, 0)') {
+				elem.style.backgroundColor = 'green';	
+			}
+			else if (document.getElementById("balloon").style.backgroundColor == 'green') {
+				elem.style.backgroundColor = 'blue';
+			}
+			else if (document.getElementById("balloon").style.backgroundColor == 'blue') {
+				elem.style.backgroundColor = 'red';
+			}
+
+			var num = bw.match(/\d+/);
+			var num2 = bh.match(/\d+/);
+
+			num = Number(num) + 10;
+			num2 = Number(num2) + 10;
+
+			var w = num + 'px';
+			var h = num2 + 'px';
+			
+			if (num > 420) {
+				w = '200px';
+				h = '200px';
+			}
+
+			elem.style.width = w;
+			elem.style.height = h;
+		}
+
+		function liveprime() {
+		
+			var bgc = window.getComputedStyle(elem, null).getPropertyValue("background-color");
+			var bw = window.getComputedStyle(elem, null).getPropertyValue("width");
+			var bh = window.getComputedStyle(elem, null).getPropertyValue("height");
+
+			if (bgc == 'rgb(255, 0, 0)') {
+				elem.style.backgroundColor = 'blue';	
+			}
+			else if (document.getElementById("balloon").style.backgroundColor == 'green') {
+				elem.style.backgroundColor = 'red';
+			}
+			else if (document.getElementById("balloon").style.backgroundColor == 'blue') {
+				elem.style.backgroundColor = 'green';
+			}	
+			
+			var num = bw.match(/\d+/);
+			var num2 = bh.match(/\d+/);
+
+			num = Number(num) - 5;
+			num2 = Number(num2) - 5;
+
+
+			var w = num + 'px';
+			var h = num2 + 'px';
+
+			if (num < 200)
+			{
+				w = '200px';
+				h = '200px';	
+			}
+
+			elem.style.windowidth = w;
+			elem.style.height = h;
+
+		}
+	</script>
+</body>
+</html>

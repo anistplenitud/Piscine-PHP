@@ -1,0 +1,159 @@
+.see {
+
+}
+
+body {
+	background-color: #505050;
+}
+.side {
+	position: absolute;
+	border-radius: 9px;
+	box-shadow: 10px 10px 10px black;
+	background-color: #949494;
+	height: 39%;
+	width: 8%;
+	top: 17%;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+}
+
+.side img {
+	
+	max-height: 18%;
+}
+#im_oeil {
+	border: 5px solid red;
+	border-radius: 5px;
+}
+
+#im_towel {
+	max-height: 10%;
+}
+
+#ordinateurs {
+	text-shadow: 5px 5px 5px red;
+}
+
+#b_repondre {
+	border-radius: 1px;
+}
+
+#i_repondre {
+	border-color: lightgray;
+	border-style: inset;
+	width: 70%;
+}
+
+#para {
+	font-family: sans-serif;
+}
+#entrez {
+	font-family: Times New Roman;
+	font-size: 150%;
+	letter-spacing: 3px;
+}
+
+#wall {
+	position: absolute;
+	height: 18%;
+	background-image: url("resources/brick.jpg");
+	width: 80%;
+	left :10%;
+}
+
+#front_s {
+	position: absolute;
+	z-index: 2;
+	height: 15%;
+	width: 27%;
+	top: 68%;
+	left: 10%;
+	background-color: palegreen;
+	border-radius: 9px;
+	box-shadow: 10px 10px 10px black;
+	padding: 0.5%;
+}
+#im_cluster {
+	max-width: 100%;
+	max-height: 100%;
+
+}
+
+#mid_s{
+	position: absolute;
+	top: 17%;
+	left: 26%;
+	width: 46%;
+	height: auto;
+	border-radius: 9px;
+	box-shadow: 10px 10px 10px black;
+	background-color: #949494;
+	padding: 1%;
+
+}
+
+#left_s {
+	left: 16%;
+}
+
+#right_s {
+	left: 76%;
+}
+#heading {
+	position: absolute;
+	width: 72%;
+	top:2%;
+	height:13%;
+	left:14%;
+	border-radius: 9px;
+	box-shadow: 10px 10px 10px black;
+	background-color: #909090;
+}
+#tdoft {
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	width: 40%;
+	border-radius: 9px;
+	height: 80%;
+
+
+}
+#doft_title {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+}
+#loupe {
+	position: absolute;
+	right: 3%;
+	bottom: -14%;
+	height: 100%;
+	width: 15%;
+}
+#m_glass {
+	position: absolute;
+	height: 100%;
+	max-width: 100%;
+	
+}
+
+#close {
+	position: absolute;
+	top: 80%;
+	right: 1%;
+	width: 2%;
+	height: 15%;
+
+}
+
+#reload {
+	position: absolute;
+	top: 4%;
+	right:1%;
+	width: 2%;
+	height: 15%;
+
+}

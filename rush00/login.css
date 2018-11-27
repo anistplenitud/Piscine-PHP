@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+}
+#ad_1 {
+	width: 100%;
+}
+
+#shop_title {
+	color :white;
+	margin-left: 10%; 
+}
+
+#group1 {
+	position: absolute;
+	top: 15%;
+	left: 2%;
+	width: 40%;
+	border: 1px solid red;
+}
+
+#group2 {
+	position: absolute;
+	top: 15%;
+	right: 2%;
+	width: 50%;
+	border: 1px solid red;
+}
+
+#group3 {
+	position: absolute;
+	top: 25%;
+	left: 2%;
+	width: 40%;
+	border: 1px solid red;
+}
+
+#group4 {
+	position: absolute;
+	top: 25%;
+	right: 2%;
+	width: 50%;
+	border: 1px solid red;
+}
+
+#group5 {
+	position: absolute;
+	top: 35%;
+	left: 2%;
+	width: 96%;
+	border: 1px solid red;
+}
+
+#group6 {
+	position: absolute;
+	top: 55%;
+	left: 2%;
+	width: 40%;
+	border: 1px solid red;
+}
+
+#group7 {
+	position: absolute;
+	top: 65%;
+	left: 2%;
+	width: 60%;
+	border: 1px solid red;
+}
+
+#group8 {
+	position: absolute;
+	top: 75%;
+	left: 2%;
+	width: 60%;
+	border: 1px solid red;
+}
+
+#signup_btn {
+	position: absolute;
+	top: 90%;
+	left: 2%;
+}
+
+#nav {
+	position: absolute;
+	right: 2%;
+	top: 2%;
+}
+
+#nav li{
+	float: left;
+	margin-right: 2vw;
+	list-style-type: none;
+	color: white;
+}
+
+#nav a {
+	text-decoration: none;
+	color: white;
+}
+
+#signup_header {
+	width: 100%;
+	height: 10%;
+	font-size: 100%;
+}
+
+#login_submit {
+	position: absolute;
+	top: 50%;
+	margin-left :2vw;
+}
+
+#login_OAuth {
+	position: absolute;
+	border: 1px solid red;
+	height: 40%;
+	width: 50%;
+	top: 17%;
+}
+
+#signup_form {
+	border: 1px solid red;
+	position: absolute;
+	top: 17%;
+	width: 40%;
+	left: 55%;
+	height: 60%;
+}
+
+.signup_inputs {
+	width: 100%;
+	
+}
+
+.login_label {
+	position: absolute;
+	top: 0%;
+	color: #003152;
+	
+}
+.left_float {
+	float: left;
+	margin-left: 2vw;
+	margin-top: 0.5vw;
+}
+
+#login_div {
+	position: absolute;
+	left: 0%;
+	top: 10%;
+	border: 1px solid red;
+	width: 50%;
+	height: 6%;
+}
+
+#logo_banner {
+	width: 100vw;
+	background-image: linear-gradient(  #003152,#3b5998);
+	height: 10%;
+	border: 1px solid red;
+}
+

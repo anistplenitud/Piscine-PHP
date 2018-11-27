@@ -1,0 +1,58 @@
+#options_ul li {
+	color: black;
+	padding: 2vw;
+	animation: glow 2s infinite alternate;
+	display: block;
+}
+
+#options_ul {
+	display: none;
+}
+
+#options_ul li:hover {
+	background-color: black;
+	color : white;
+	display: block;
+}
+
+#options:hover ul {
+	display: block;
+}
+
+#options_ul:hover {
+	display: block;
+}
+
+#options {
+	cursor: pointer;
+	padding: 2vw;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+	padding: 10px;
+	font-size: 4vw;
+}
+
+#dropdown {
+	border: 1px solid #4C3C1B;
+	padding: 8px 80px 8px 8px;
+}
+
+#dropdown:hover ul {
+	display: block;
+}
+
+
+@keyframes glow {
+  	from {
+    	color: black;
+    	border-color: gold;
+    	box-shadow: 0px 1px 0px 0px;
+    	
+ 	 }
+  	to {
+
+    	color: gold;
+    	border-color: black;
+    	box-shadow: 0px 4px 10px 0px;
+  		}
+	}
